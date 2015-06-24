@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F9E10A032BB6C71FC05E51 /* LiveConnectionCreatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F313FE0777B33F3FBA9641 /* LiveConnectionCreatorDelegate.h */; };
+		029F6A5ECB004A1EF375E84C /* LiveOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 25481747DBA70F52AB38753C /* LiveOperationCore.h */; };
+		04B3259A72B8A535E818A5AD /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F1742D12C7C9393EB6724298 /* StringHelper.h */; };
+		05BD2BCF4C3E2E32D19D7ECE /* LiveDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A2EBAC634B945B100907A /* LiveDownloadOperation.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		09A8E9DC03D91FDAD2DE9239 /* LiveApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DCA23A70AAD3CEC4FE31A /* LiveApiHelper.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		0BB12C9B95B694633DBDC956 /* LiveDownloadOperationCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD4F464A2222C69D8949610 /* LiveDownloadOperationCore.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		0EBD1B41EA7C7B78CDC75DB4 /* JsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 53EE71A093E97B0D317E88D2 /* JsonWriter.h */; };
+		1A57F2B318CE17F36D7D8841 /* LiveOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD0C5912E563E0E7CB6A05E /* LiveOperationDelegate.h */; };
+		1EEA9ECB7B937EFD945E3C12 /* LiveOperationCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5118D33E0842C44D2CA40719 /* LiveOperationCore.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		1FC179079089F335C1E4549D /* LiveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CD55D8D400BF38EF97718 /* LiveOperation.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		20FB25A276D68D56DAC2D316 /* LiveConnectionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0097719F9957923EA1EB7DC6 /* LiveConnectionHelper.h */; };
+		248D49D829D143C4D6CD86A3 /* LiveAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C7CDCA954AAFEB250E6A00 /* LiveAuthHelper.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		269A8AEB6C477CDBDF7FB107 /* LiveUploadOverwriteOption.h in Headers */ = {isa = PBXBuildFile; fileRef = B0983AEB74464A13128E39BB /* LiveUploadOverwriteOption.h */; };
+		29394DF6CCA6A20CCA01F3D6 /* LiveConnectClientCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CB37BAA196D606EA6631C3CF /* LiveConnectClientCore.h */; };
+		3793C52326D2D240C6365585 /* StreamReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB20F6FF0377CE40540FCB3 /* StreamReader.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		383B2C69C60138914ED67C5E /* LiveDownloadOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 596183CF03BB2448966EB15D /* LiveDownloadOperationDelegate.h */; };
+		38AF803BD37ACE1B3AAD6B08 /* LiveAuthDialogDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2F3A90F8BE21FDB3C1D6DB /* LiveAuthDialogDelegate.h */; };
+		40DD303EB7177AFC08F55972 /* LiveConnectSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C03D9E37E3CCCD810D8C5FBC /* LiveConnectSession.h */; };
+		41BB338976D9E29415C43579 /* LiveAuthStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = F56932AE926C5595A16DD714 /* LiveAuthStorage.h */; };
+		4B8A62C6AA2D96B30D9E60EA /* Pods-OneDrive-LiveSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A9964F3AAA34A3293375FF /* Pods-OneDrive-LiveSDK-dummy.m */; };
+		4F890D8969DB257BC890C6A6 /* UrlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAE15C51AC043CA636A946 /* UrlHelper.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		5482490B7BA70ABF432A415E /* LiveAuthDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A85392BAA6F8EAE3322685CE /* LiveAuthDelegate.h */; };
+		55759E9DD6C3D593D5F69B6B /* LiveOperationProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F33698DD518092CE8240D05 /* LiveOperationProgress.h */; };
+		568536CFEDE35C036FACD29E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C943FC00648B1253AEB27A3 /* StringHelper.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		5D48159DC4B64F396CE6E584 /* LiveDownloadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA28EA734BE2D5D6F57723C6 /* LiveDownloadOperation.h */; };
+		65F47AADAF2D01448E2F5C2B /* LiveAuthRefreshRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 616720497E4FFB8887710930 /* LiveAuthRefreshRequest.h */; };
+		6A2BB3E9A65BE6D0F149A8B2 /* LiveAuthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A98B972BB42A26FF6FA52F /* LiveAuthRequest.h */; };
+		6A316DC42C629D4835120F79 /* LiveAuthRefreshRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D13976553D25FF32B253798 /* LiveAuthRefreshRequest.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		6B7642AFEA4EF32E26ED22F6 /* LiveDownloadOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 006C0ACB330F6B4AAD0E7819 /* LiveDownloadOperationInternal.h */; };
+		6D337DC3ECEE284EC53AFACF /* LiveOperationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2882932BB6AED85A20C45 /* LiveOperationProgress.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		7045B7993989B503AB8C90F4 /* LiveOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9DE44B92C613D1EEC6BD74 /* LiveOperationInternal.h */; };
+		74FE1C488C1CD6FB540D3E44 /* LiveAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13723743AA6F6A7D94F32B /* LiveAuthRequest.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		84D9D20FFB5B28DF92AF4CD1 /* StreamReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6E60A8724FAB6439B96B12 /* StreamReader.h */; };
+		8E6A0E0BECACDEB0469B9A25 /* LiveAuthDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 67622B30B567A3C3980A48F3 /* LiveAuthDialog.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		96871D9EB3FCFA17454E8E33 /* LiveConnectSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E9085A2CBBBF0C5A3CAD7AE2 /* LiveConnectSession.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		999F538018D0F6523A65E521 /* LiveConnectClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1507E4C37FDCA92E789069C9 /* LiveConnectClient.h */; };
+		9A40ECF3CD058A3EDE6630F5 /* Pods-OneDrive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE22E1CCF50C651F1AC7DA03 /* Pods-OneDrive-dummy.m */; };
+		9C4FD018CB645AF274CEFE14 /* UrlHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C40221E90A8D34B6E9F7E82 /* UrlHelper.h */; };
+		9C70B26BB733620132A7582E /* LiveOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F79324A654BA1568B53F96 /* LiveOperation.h */; };
+		A407EB36A71E644E401A1C10 /* LiveConnectSessionStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1C127D7796C5B334677293 /* LiveConnectSessionStatus.h */; };
+		A9740F9CEEEFEC305653EB27 /* LiveApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0488902729A1FF219C95F901 /* LiveApiHelper.h */; };
+		AB38B1F0390027D37D44B4FE /* LiveConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8208B779E786F87835969944 /* LiveConnectionHelper.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		B666467C71F940513B505E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1F1DB79CA8ADC9BB90B477 /* Foundation.framework */; };
+		BC55490DE2CA7A4F13AADA96 /* LiveAuthStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EB2618B28A595564D0B35F /* LiveAuthStorage.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		BE837D7F9D4B4B75402EBA93 /* LiveUploadOperationCore.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC701BDD1800B495C843767 /* LiveUploadOperationCore.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		C83AA0A5EE96C03BFE36BE7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1F1DB79CA8ADC9BB90B477 /* Foundation.framework */; };
+		CDD701275F2AC6631053FC19 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9552CA6F64F958B2253BAC5 /* JsonParser.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		CFDE0406FF1FDD18C68299E7 /* LiveConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9653A964D8B6E3ED89B856B8 /* LiveConstants.h */; };
+		D2F43DAB29D02704C66C7024 /* LiveAuthHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB8CAC35C6C8B491315E17B /* LiveAuthHelper.h */; };
+		D7150691DEAC9BC8FC8E48E0 /* LiveAuthDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C2C118D24FD03F0F6CD5BC /* LiveAuthDialog.h */; };
+		E17C017C647B319FCBB576DC /* LiveUploadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 155C398EAB9367167D73A771 /* LiveUploadOperationCore.h */; };
+		E3D432427733451237701591 /* JsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D75F2E16B6A674610F6D93CC /* JsonWriter.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		E3E6ED316E3DC2332D7A596E /* LiveDownloadOperationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C93A2568546896DA5826836C /* LiveDownloadOperationCore.h */; };
+		E8B07B5DCC79AFCB172A1937 /* LiveUploadOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8BA5B8C1CB75634CEA470C /* LiveUploadOperationDelegate.h */; };
+		FA04F027B893D1FBD21C9834 /* JsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF3C32947BEA5D78C8EFEEB /* JsonParser.h */; };
+		FC0A8B6F492D185EF3929404 /* LiveConnectClientCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 527AE2C63807F373A58DA6DA /* LiveConnectClientCore.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+		FF557DD8093B1223E1999A90 /* LiveConnectClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD72AE5505D574CC2041AEC /* LiveConnectClient.m */; settings = {COMPILER_FLAGS = "-DNS_BLOCK_ASSERTIONS=1 -fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		245DAA947381E55B99C13F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D38CAB9405F9F896F535E18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1409D717871735EE10902193;
+			remoteInfo = "Pods-OneDrive-LiveSDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006C0ACB330F6B4AAD0E7819 /* LiveDownloadOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveDownloadOperationInternal.h; path = src/LiveSDK/Library/Internal/LiveDownloadOperationInternal.h; sourceTree = "<group>"; };
+		0097719F9957923EA1EB7DC6 /* LiveConnectionHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectionHelper.h; path = src/LiveSDK/Library/Internal/Helpers/LiveConnectionHelper.h; sourceTree = "<group>"; };
+		03C7CDCA954AAFEB250E6A00 /* LiveAuthHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveAuthHelper.m; path = src/LiveSDK/Library/Internal/Helpers/LiveAuthHelper.m; sourceTree = "<group>"; };
+		0488902729A1FF219C95F901 /* LiveApiHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveApiHelper.h; path = src/LiveSDK/Library/Internal/Helpers/LiveApiHelper.h; sourceTree = "<group>"; };
+		05F313FE0777B33F3FBA9641 /* LiveConnectionCreatorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectionCreatorDelegate.h; path = src/LiveSDK/Library/Internal/Helpers/LiveConnectionCreatorDelegate.h; sourceTree = "<group>"; };
+		06F79324A654BA1568B53F96 /* LiveOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveOperation.h; path = src/LiveSDK/Library/Public/LiveOperation.h; sourceTree = "<group>"; };
+		0AD4F464A2222C69D8949610 /* LiveDownloadOperationCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveDownloadOperationCore.m; path = src/LiveSDK/Library/Internal/LiveDownloadOperationCore.m; sourceTree = "<group>"; };
+		11EAE15C51AC043CA636A946 /* UrlHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UrlHelper.m; path = src/LiveSDK/Library/Internal/Helpers/UrlHelper.m; sourceTree = "<group>"; };
+		1507E4C37FDCA92E789069C9 /* LiveConnectClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectClient.h; path = src/LiveSDK/Library/Public/LiveConnectClient.h; sourceTree = "<group>"; };
+		155C398EAB9367167D73A771 /* LiveUploadOperationCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveUploadOperationCore.h; path = src/LiveSDK/Library/Internal/LiveUploadOperationCore.h; sourceTree = "<group>"; };
+		1768B16B0CDBC6409DA393FD /* LiveAuthDialog_iPad.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LiveAuthDialog_iPad.xib; path = src/LiveSDK/Library/Internal/LiveAuthDialog_iPad.xib; sourceTree = "<group>"; };
+		1DE6C30F59AA8EFFBC1C07C1 /* Pods-OneDrive-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneDrive-acknowledgements.markdown"; sourceTree = "<group>"; };
+		25481747DBA70F52AB38753C /* LiveOperationCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveOperationCore.h; path = src/LiveSDK/Library/Internal/LiveOperationCore.h; sourceTree = "<group>"; };
+		2C40221E90A8D34B6E9F7E82 /* UrlHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UrlHelper.h; path = src/LiveSDK/Library/Internal/Helpers/UrlHelper.h; sourceTree = "<group>"; };
+		2C943FC00648B1253AEB27A3 /* StringHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StringHelper.m; path = src/LiveSDK/Library/Internal/Helpers/StringHelper.m; sourceTree = "<group>"; };
+		2EB20F6FF0377CE40540FCB3 /* StreamReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StreamReader.m; path = src/LiveSDK/Library/Internal/Helpers/StreamReader.m; sourceTree = "<group>"; };
+		3BD0C5912E563E0E7CB6A05E /* LiveOperationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveOperationDelegate.h; path = src/LiveSDK/Library/Public/LiveOperationDelegate.h; sourceTree = "<group>"; };
+		3C13723743AA6F6A7D94F32B /* LiveAuthRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveAuthRequest.m; path = src/LiveSDK/Library/Internal/LiveAuthRequest.m; sourceTree = "<group>"; };
+		3D1C127D7796C5B334677293 /* LiveConnectSessionStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectSessionStatus.h; path = src/LiveSDK/Library/Public/LiveConnectSessionStatus.h; sourceTree = "<group>"; };
+		3DB1DB46C36020CB5B842055 /* libPods-OneDrive-LiveSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneDrive-LiveSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1F1DB79CA8ADC9BB90B477 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F3DCA23A70AAD3CEC4FE31A /* LiveApiHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveApiHelper.m; path = src/LiveSDK/Library/Internal/Helpers/LiveApiHelper.m; sourceTree = "<group>"; };
+		42D2CAE61AD42B4C6825DC91 /* Pods-OneDrive-LiveSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneDrive-LiveSDK.xcconfig"; sourceTree = "<group>"; };
+		4C2F3A90F8BE21FDB3C1D6DB /* LiveAuthDialogDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthDialogDelegate.h; path = src/LiveSDK/Library/Internal/LiveAuthDialogDelegate.h; sourceTree = "<group>"; };
+		509CD55D8D400BF38EF97718 /* LiveOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveOperation.m; path = src/LiveSDK/Library/Public/LiveOperation.m; sourceTree = "<group>"; };
+		5118D33E0842C44D2CA40719 /* LiveOperationCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveOperationCore.m; path = src/LiveSDK/Library/Internal/LiveOperationCore.m; sourceTree = "<group>"; };
+		527AE2C63807F373A58DA6DA /* LiveConnectClientCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveConnectClientCore.m; path = src/LiveSDK/Library/Internal/LiveConnectClientCore.m; sourceTree = "<group>"; };
+		53EE71A093E97B0D317E88D2 /* JsonWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JsonWriter.h; path = src/LiveSDK/Library/Internal/Helpers/JsonWriter.h; sourceTree = "<group>"; };
+		596183CF03BB2448966EB15D /* LiveDownloadOperationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveDownloadOperationDelegate.h; path = src/LiveSDK/Library/Public/LiveDownloadOperationDelegate.h; sourceTree = "<group>"; };
+		616720497E4FFB8887710930 /* LiveAuthRefreshRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthRefreshRequest.h; path = src/LiveSDK/Library/Internal/LiveAuthRefreshRequest.h; sourceTree = "<group>"; };
+		62A2882932BB6AED85A20C45 /* LiveOperationProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveOperationProgress.m; path = src/LiveSDK/Library/Public/LiveOperationProgress.m; sourceTree = "<group>"; };
+		62A9964F3AAA34A3293375FF /* Pods-OneDrive-LiveSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneDrive-LiveSDK-dummy.m"; sourceTree = "<group>"; };
+		67622B30B567A3C3980A48F3 /* LiveAuthDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveAuthDialog.m; path = src/LiveSDK/Library/Internal/LiveAuthDialog.m; sourceTree = "<group>"; };
+		76FA01469E2B7BDDB64ACBDD /* backArrow_black.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = backArrow_black.png; path = src/LiveSDK/Library/Internal/Resources/backArrow_black.png; sourceTree = "<group>"; };
+		78AC949F6EC4C29DB8441DEF /* Pods-OneDrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneDrive.debug.xcconfig"; sourceTree = "<group>"; };
+		7F33698DD518092CE8240D05 /* LiveOperationProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveOperationProgress.h; path = src/LiveSDK/Library/Public/LiveOperationProgress.h; sourceTree = "<group>"; };
+		8208B779E786F87835969944 /* LiveConnectionHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveConnectionHelper.m; path = src/LiveSDK/Library/Internal/Helpers/LiveConnectionHelper.m; sourceTree = "<group>"; };
+		8D13976553D25FF32B253798 /* LiveAuthRefreshRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveAuthRefreshRequest.m; path = src/LiveSDK/Library/Internal/LiveAuthRefreshRequest.m; sourceTree = "<group>"; };
+		8FF3C32947BEA5D78C8EFEEB /* JsonParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JsonParser.h; path = src/LiveSDK/Library/Internal/Helpers/JsonParser.h; sourceTree = "<group>"; };
+		951A2EBAC634B945B100907A /* LiveDownloadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveDownloadOperation.m; path = src/LiveSDK/Library/Public/LiveDownloadOperation.m; sourceTree = "<group>"; };
+		9653A964D8B6E3ED89B856B8 /* LiveConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConstants.h; path = src/LiveSDK/Library/Internal/LiveConstants.h; sourceTree = "<group>"; };
+		9C6E60A8724FAB6439B96B12 /* StreamReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StreamReader.h; path = src/LiveSDK/Library/Internal/Helpers/StreamReader.h; sourceTree = "<group>"; };
+		9D9DE44B92C613D1EEC6BD74 /* LiveOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveOperationInternal.h; path = src/LiveSDK/Library/Internal/LiveOperationInternal.h; sourceTree = "<group>"; };
+		A2E3484917C1026C3F6AFFC3 /* Pods-OneDrive-LiveSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneDrive-LiveSDK-Private.xcconfig"; sourceTree = "<group>"; };
+		A85392BAA6F8EAE3322685CE /* LiveAuthDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthDelegate.h; path = src/LiveSDK/Library/Public/LiveAuthDelegate.h; sourceTree = "<group>"; };
+		ACB8CAC35C6C8B491315E17B /* LiveAuthHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthHelper.h; path = src/LiveSDK/Library/Internal/Helpers/LiveAuthHelper.h; sourceTree = "<group>"; };
+		B0983AEB74464A13128E39BB /* LiveUploadOverwriteOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveUploadOverwriteOption.h; path = src/LiveSDK/Library/Public/LiveUploadOverwriteOption.h; sourceTree = "<group>"; };
+		B5800538E0AF77A44066E105 /* LiveAuthDialog_iPhone.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LiveAuthDialog_iPhone.xib; path = src/LiveSDK/Library/Internal/LiveAuthDialog_iPhone.xib; sourceTree = "<group>"; };
+		BB11945736FCCE76C76C7996 /* Pods-OneDrive-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneDrive-acknowledgements.plist"; sourceTree = "<group>"; };
+		C03D9E37E3CCCD810D8C5FBC /* LiveConnectSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectSession.h; path = src/LiveSDK/Library/Public/LiveConnectSession.h; sourceTree = "<group>"; };
+		C6C2C118D24FD03F0F6CD5BC /* LiveAuthDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthDialog.h; path = src/LiveSDK/Library/Internal/LiveAuthDialog.h; sourceTree = "<group>"; };
+		C756507C529A44FD90F149AB /* Pods-OneDrive-LiveSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneDrive-LiveSDK-prefix.pch"; sourceTree = "<group>"; };
+		C93A2568546896DA5826836C /* LiveDownloadOperationCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveDownloadOperationCore.h; path = src/LiveSDK/Library/Internal/LiveDownloadOperationCore.h; sourceTree = "<group>"; };
+		C9504E97E91A38A3FB06C68E /* Pods-OneDrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneDrive.release.xcconfig"; sourceTree = "<group>"; };
+		CB37BAA196D606EA6631C3CF /* LiveConnectClientCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveConnectClientCore.h; path = src/LiveSDK/Library/Internal/LiveConnectClientCore.h; sourceTree = "<group>"; };
+		D2A98B972BB42A26FF6FA52F /* LiveAuthRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthRequest.h; path = src/LiveSDK/Library/Internal/LiveAuthRequest.h; sourceTree = "<group>"; };
+		D75F2E16B6A674610F6D93CC /* JsonWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JsonWriter.m; path = src/LiveSDK/Library/Internal/Helpers/JsonWriter.m; sourceTree = "<group>"; };
+		D9552CA6F64F958B2253BAC5 /* JsonParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JsonParser.m; path = src/LiveSDK/Library/Internal/Helpers/JsonParser.m; sourceTree = "<group>"; };
+		DA28EA734BE2D5D6F57723C6 /* LiveDownloadOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveDownloadOperation.h; path = src/LiveSDK/Library/Public/LiveDownloadOperation.h; sourceTree = "<group>"; };
+		DCD72AE5505D574CC2041AEC /* LiveConnectClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveConnectClient.m; path = src/LiveSDK/Library/Public/LiveConnectClient.m; sourceTree = "<group>"; };
+		DD65A15C7CFE71C30506287F /* libPods-OneDrive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneDrive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE22E1CCF50C651F1AC7DA03 /* Pods-OneDrive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneDrive-dummy.m"; sourceTree = "<group>"; };
+		DF8BA5B8C1CB75634CEA470C /* LiveUploadOperationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveUploadOperationDelegate.h; path = src/LiveSDK/Library/Public/LiveUploadOperationDelegate.h; sourceTree = "<group>"; };
+		E1EB2618B28A595564D0B35F /* LiveAuthStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveAuthStorage.m; path = src/LiveSDK/Library/Internal/LiveAuthStorage.m; sourceTree = "<group>"; };
+		E9085A2CBBBF0C5A3CAD7AE2 /* LiveConnectSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveConnectSession.m; path = src/LiveSDK/Library/Public/LiveConnectSession.m; sourceTree = "<group>"; };
+		EB8832A58D5680BDCDE758E9 /* Pods-OneDrive-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneDrive-environment.h"; sourceTree = "<group>"; };
+		F1742D12C7C9393EB6724298 /* StringHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringHelper.h; path = src/LiveSDK/Library/Internal/Helpers/StringHelper.h; sourceTree = "<group>"; };
+		F3849E12027D4D83F8684FC0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F457963AF98DA2932CB871E7 /* Pods-OneDrive-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneDrive-resources.sh"; sourceTree = "<group>"; };
+		F56932AE926C5595A16DD714 /* LiveAuthStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LiveAuthStorage.h; path = src/LiveSDK/Library/Internal/LiveAuthStorage.h; sourceTree = "<group>"; };
+		FBC701BDD1800B495C843767 /* LiveUploadOperationCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LiveUploadOperationCore.m; path = src/LiveSDK/Library/Internal/LiveUploadOperationCore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78EEE07498FF50E39460BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83AA0A5EE96C03BFE36BE7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8944EBE32893F003BB49B5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666467C71F940513B505E98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2397966135175E3EC3AEAD87 /* Pods-OneDrive */ = {
+			isa = PBXGroup;
+			children = (
+				1DE6C30F59AA8EFFBC1C07C1 /* Pods-OneDrive-acknowledgements.markdown */,
+				BB11945736FCCE76C76C7996 /* Pods-OneDrive-acknowledgements.plist */,
+				DE22E1CCF50C651F1AC7DA03 /* Pods-OneDrive-dummy.m */,
+				EB8832A58D5680BDCDE758E9 /* Pods-OneDrive-environment.h */,
+				F457963AF98DA2932CB871E7 /* Pods-OneDrive-resources.sh */,
+				78AC949F6EC4C29DB8441DEF /* Pods-OneDrive.debug.xcconfig */,
+				C9504E97E91A38A3FB06C68E /* Pods-OneDrive.release.xcconfig */,
+			);
+			name = "Pods-OneDrive";
+			path = "Target Support Files/Pods-OneDrive";
+			sourceTree = "<group>";
+		};
+		268464EFB181CE81752B0406 = {
+			isa = PBXGroup;
+			children = (
+				F3849E12027D4D83F8684FC0 /* Podfile */,
+				91407DD815B9E2655FDE6F38 /* Frameworks */,
+				E86A4ADFF475C38800D4279E /* Pods */,
+				62EAAA2F1103D2D75B831284 /* Products */,
+				C8174D65EF53690A7C2F04F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4C2CE347438FE51D2BB2FC58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D2CAE61AD42B4C6825DC91 /* Pods-OneDrive-LiveSDK.xcconfig */,
+				A2E3484917C1026C3F6AFFC3 /* Pods-OneDrive-LiveSDK-Private.xcconfig */,
+				62A9964F3AAA34A3293375FF /* Pods-OneDrive-LiveSDK-dummy.m */,
+				C756507C529A44FD90F149AB /* Pods-OneDrive-LiveSDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-OneDrive-LiveSDK";
+			sourceTree = "<group>";
+		};
+		62EAAA2F1103D2D75B831284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD65A15C7CFE71C30506287F /* libPods-OneDrive.a */,
+				3DB1DB46C36020CB5B842055 /* libPods-OneDrive-LiveSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AD42E76EB2C54F0181EADDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1768B16B0CDBC6409DA393FD /* LiveAuthDialog_iPad.xib */,
+				B5800538E0AF77A44066E105 /* LiveAuthDialog_iPhone.xib */,
+				76FA01469E2B7BDDB64ACBDD /* backArrow_black.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		720CDE84C45A357D535D72D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3F1F1DB79CA8ADC9BB90B477 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		887A4EB3AD298FB49EB0E5B1 /* LiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8FF3C32947BEA5D78C8EFEEB /* JsonParser.h */,
+				D9552CA6F64F958B2253BAC5 /* JsonParser.m */,
+				53EE71A093E97B0D317E88D2 /* JsonWriter.h */,
+				D75F2E16B6A674610F6D93CC /* JsonWriter.m */,
+				0488902729A1FF219C95F901 /* LiveApiHelper.h */,
+				3F3DCA23A70AAD3CEC4FE31A /* LiveApiHelper.m */,
+				A85392BAA6F8EAE3322685CE /* LiveAuthDelegate.h */,
+				C6C2C118D24FD03F0F6CD5BC /* LiveAuthDialog.h */,
+				67622B30B567A3C3980A48F3 /* LiveAuthDialog.m */,
+				4C2F3A90F8BE21FDB3C1D6DB /* LiveAuthDialogDelegate.h */,
+				ACB8CAC35C6C8B491315E17B /* LiveAuthHelper.h */,
+				03C7CDCA954AAFEB250E6A00 /* LiveAuthHelper.m */,
+				616720497E4FFB8887710930 /* LiveAuthRefreshRequest.h */,
+				8D13976553D25FF32B253798 /* LiveAuthRefreshRequest.m */,
+				D2A98B972BB42A26FF6FA52F /* LiveAuthRequest.h */,
+				3C13723743AA6F6A7D94F32B /* LiveAuthRequest.m */,
+				F56932AE926C5595A16DD714 /* LiveAuthStorage.h */,
+				E1EB2618B28A595564D0B35F /* LiveAuthStorage.m */,
+				1507E4C37FDCA92E789069C9 /* LiveConnectClient.h */,
+				DCD72AE5505D574CC2041AEC /* LiveConnectClient.m */,
+				CB37BAA196D606EA6631C3CF /* LiveConnectClientCore.h */,
+				527AE2C63807F373A58DA6DA /* LiveConnectClientCore.m */,
+				C03D9E37E3CCCD810D8C5FBC /* LiveConnectSession.h */,
+				E9085A2CBBBF0C5A3CAD7AE2 /* LiveConnectSession.m */,
+				3D1C127D7796C5B334677293 /* LiveConnectSessionStatus.h */,
+				05F313FE0777B33F3FBA9641 /* LiveConnectionCreatorDelegate.h */,
+				0097719F9957923EA1EB7DC6 /* LiveConnectionHelper.h */,
+				8208B779E786F87835969944 /* LiveConnectionHelper.m */,
+				9653A964D8B6E3ED89B856B8 /* LiveConstants.h */,
+				DA28EA734BE2D5D6F57723C6 /* LiveDownloadOperation.h */,
+				951A2EBAC634B945B100907A /* LiveDownloadOperation.m */,
+				C93A2568546896DA5826836C /* LiveDownloadOperationCore.h */,
+				0AD4F464A2222C69D8949610 /* LiveDownloadOperationCore.m */,
+				596183CF03BB2448966EB15D /* LiveDownloadOperationDelegate.h */,
+				006C0ACB330F6B4AAD0E7819 /* LiveDownloadOperationInternal.h */,
+				06F79324A654BA1568B53F96 /* LiveOperation.h */,
+				509CD55D8D400BF38EF97718 /* LiveOperation.m */,
+				25481747DBA70F52AB38753C /* LiveOperationCore.h */,
+				5118D33E0842C44D2CA40719 /* LiveOperationCore.m */,
+				3BD0C5912E563E0E7CB6A05E /* LiveOperationDelegate.h */,
+				9D9DE44B92C613D1EEC6BD74 /* LiveOperationInternal.h */,
+				7F33698DD518092CE8240D05 /* LiveOperationProgress.h */,
+				62A2882932BB6AED85A20C45 /* LiveOperationProgress.m */,
+				155C398EAB9367167D73A771 /* LiveUploadOperationCore.h */,
+				FBC701BDD1800B495C843767 /* LiveUploadOperationCore.m */,
+				DF8BA5B8C1CB75634CEA470C /* LiveUploadOperationDelegate.h */,
+				B0983AEB74464A13128E39BB /* LiveUploadOverwriteOption.h */,
+				9C6E60A8724FAB6439B96B12 /* StreamReader.h */,
+				2EB20F6FF0377CE40540FCB3 /* StreamReader.m */,
+				F1742D12C7C9393EB6724298 /* StringHelper.h */,
+				2C943FC00648B1253AEB27A3 /* StringHelper.m */,
+				2C40221E90A8D34B6E9F7E82 /* UrlHelper.h */,
+				11EAE15C51AC043CA636A946 /* UrlHelper.m */,
+				6AD42E76EB2C54F0181EADDA /* Resources */,
+				4C2CE347438FE51D2BB2FC58 /* Support Files */,
+			);
+			path = LiveSDK;
+			sourceTree = "<group>";
+		};
+		91407DD815B9E2655FDE6F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				720CDE84C45A357D535D72D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8174D65EF53690A7C2F04F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2397966135175E3EC3AEAD87 /* Pods-OneDrive */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E86A4ADFF475C38800D4279E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				887A4EB3AD298FB49EB0E5B1 /* LiveSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DCC94D819920B552547FF5C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA04F027B893D1FBD21C9834 /* JsonParser.h in Headers */,
+				0EBD1B41EA7C7B78CDC75DB4 /* JsonWriter.h in Headers */,
+				A9740F9CEEEFEC305653EB27 /* LiveApiHelper.h in Headers */,
+				5482490B7BA70ABF432A415E /* LiveAuthDelegate.h in Headers */,
+				D7150691DEAC9BC8FC8E48E0 /* LiveAuthDialog.h in Headers */,
+				38AF803BD37ACE1B3AAD6B08 /* LiveAuthDialogDelegate.h in Headers */,
+				D2F43DAB29D02704C66C7024 /* LiveAuthHelper.h in Headers */,
+				65F47AADAF2D01448E2F5C2B /* LiveAuthRefreshRequest.h in Headers */,
+				6A2BB3E9A65BE6D0F149A8B2 /* LiveAuthRequest.h in Headers */,
+				41BB338976D9E29415C43579 /* LiveAuthStorage.h in Headers */,
+				999F538018D0F6523A65E521 /* LiveConnectClient.h in Headers */,
+				29394DF6CCA6A20CCA01F3D6 /* LiveConnectClientCore.h in Headers */,
+				40DD303EB7177AFC08F55972 /* LiveConnectSession.h in Headers */,
+				A407EB36A71E644E401A1C10 /* LiveConnectSessionStatus.h in Headers */,
+				01F9E10A032BB6C71FC05E51 /* LiveConnectionCreatorDelegate.h in Headers */,
+				20FB25A276D68D56DAC2D316 /* LiveConnectionHelper.h in Headers */,
+				CFDE0406FF1FDD18C68299E7 /* LiveConstants.h in Headers */,
+				5D48159DC4B64F396CE6E584 /* LiveDownloadOperation.h in Headers */,
+				E3E6ED316E3DC2332D7A596E /* LiveDownloadOperationCore.h in Headers */,
+				383B2C69C60138914ED67C5E /* LiveDownloadOperationDelegate.h in Headers */,
+				6B7642AFEA4EF32E26ED22F6 /* LiveDownloadOperationInternal.h in Headers */,
+				9C70B26BB733620132A7582E /* LiveOperation.h in Headers */,
+				029F6A5ECB004A1EF375E84C /* LiveOperationCore.h in Headers */,
+				1A57F2B318CE17F36D7D8841 /* LiveOperationDelegate.h in Headers */,
+				7045B7993989B503AB8C90F4 /* LiveOperationInternal.h in Headers */,
+				55759E9DD6C3D593D5F69B6B /* LiveOperationProgress.h in Headers */,
+				E17C017C647B319FCBB576DC /* LiveUploadOperationCore.h in Headers */,
+				E8B07B5DCC79AFCB172A1937 /* LiveUploadOperationDelegate.h in Headers */,
+				269A8AEB6C477CDBDF7FB107 /* LiveUploadOverwriteOption.h in Headers */,
+				84D9D20FFB5B28DF92AF4CD1 /* StreamReader.h in Headers */,
+				04B3259A72B8A535E818A5AD /* StringHelper.h in Headers */,
+				9C4FD018CB645AF274CEFE14 /* UrlHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1409D717871735EE10902193 /* Pods-OneDrive-LiveSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70198FE4C6E96724A80C0EC /* Build configuration list for PBXNativeTarget "Pods-OneDrive-LiveSDK" */;
+			buildPhases = (
+				E5BA66041954BBFFF963AF78 /* Sources */,
+				78EEE07498FF50E39460BD41 /* Frameworks */,
+				DCC94D819920B552547FF5C2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OneDrive-LiveSDK";
+			productName = "Pods-OneDrive-LiveSDK";
+			productReference = 3DB1DB46C36020CB5B842055 /* libPods-OneDrive-LiveSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		45A6525804A8AD313ECA3F41 /* Pods-OneDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9AE4CF14CEAB7D76682EC9 /* Build configuration list for PBXNativeTarget "Pods-OneDrive" */;
+			buildPhases = (
+				8B6108EEFFEBBFFF9B9C19AE /* Sources */,
+				8944EBE32893F003BB49B5CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E2314277F707E9717E1B67 /* PBXTargetDependency */,
+			);
+			name = "Pods-OneDrive";
+			productName = "Pods-OneDrive";
+			productReference = DD65A15C7CFE71C30506287F /* libPods-OneDrive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D38CAB9405F9F896F535E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 0B16D399E27BEAD3B893C132 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 268464EFB181CE81752B0406;
+			productRefGroup = 62EAAA2F1103D2D75B831284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A6525804A8AD313ECA3F41 /* Pods-OneDrive */,
+				1409D717871735EE10902193 /* Pods-OneDrive-LiveSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B6108EEFFEBBFFF9B9C19AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A40ECF3CD058A3EDE6630F5 /* Pods-OneDrive-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5BA66041954BBFFF963AF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD701275F2AC6631053FC19 /* JsonParser.m in Sources */,
+				E3D432427733451237701591 /* JsonWriter.m in Sources */,
+				09A8E9DC03D91FDAD2DE9239 /* LiveApiHelper.m in Sources */,
+				8E6A0E0BECACDEB0469B9A25 /* LiveAuthDialog.m in Sources */,
+				248D49D829D143C4D6CD86A3 /* LiveAuthHelper.m in Sources */,
+				6A316DC42C629D4835120F79 /* LiveAuthRefreshRequest.m in Sources */,
+				74FE1C488C1CD6FB540D3E44 /* LiveAuthRequest.m in Sources */,
+				BC55490DE2CA7A4F13AADA96 /* LiveAuthStorage.m in Sources */,
+				FF557DD8093B1223E1999A90 /* LiveConnectClient.m in Sources */,
+				FC0A8B6F492D185EF3929404 /* LiveConnectClientCore.m in Sources */,
+				96871D9EB3FCFA17454E8E33 /* LiveConnectSession.m in Sources */,
+				AB38B1F0390027D37D44B4FE /* LiveConnectionHelper.m in Sources */,
+				05BD2BCF4C3E2E32D19D7ECE /* LiveDownloadOperation.m in Sources */,
+				0BB12C9B95B694633DBDC956 /* LiveDownloadOperationCore.m in Sources */,
+				1FC179079089F335C1E4549D /* LiveOperation.m in Sources */,
+				1EEA9ECB7B937EFD945E3C12 /* LiveOperationCore.m in Sources */,
+				6D337DC3ECEE284EC53AFACF /* LiveOperationProgress.m in Sources */,
+				BE837D7F9D4B4B75402EBA93 /* LiveUploadOperationCore.m in Sources */,
+				4B8A62C6AA2D96B30D9E60EA /* Pods-OneDrive-LiveSDK-dummy.m in Sources */,
+				3793C52326D2D240C6365585 /* StreamReader.m in Sources */,
+				568536CFEDE35C036FACD29E /* StringHelper.m in Sources */,
+				4F890D8969DB257BC890C6A6 /* UrlHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E2314277F707E9717E1B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OneDrive-LiveSDK";
+			target = 1409D717871735EE10902193 /* Pods-OneDrive-LiveSDK */;
+			targetProxy = 245DAA947381E55B99C13F5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52B31974DE2E478778FD198B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E3484917C1026C3F6AFFC3 /* Pods-OneDrive-LiveSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneDrive-LiveSDK/Pods-OneDrive-LiveSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		70BA8133C2054057B0DF9756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8789770626A999C70B785D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		972E1AA8AC37E58E5E96A418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E3484917C1026C3F6AFFC3 /* Pods-OneDrive-LiveSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneDrive-LiveSDK/Pods-OneDrive-LiveSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF829C3EE62ACB6992C0A95A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78AC949F6EC4C29DB8441DEF /* Pods-OneDrive.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EEF1257930B2E7BD93F15228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9504E97E91A38A3FB06C68E /* Pods-OneDrive.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B16D399E27BEAD3B893C132 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8789770626A999C70B785D1C /* Debug */,
+				70BA8133C2054057B0DF9756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70198FE4C6E96724A80C0EC /* Build configuration list for PBXNativeTarget "Pods-OneDrive-LiveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972E1AA8AC37E58E5E96A418 /* Debug */,
+				52B31974DE2E478778FD198B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9AE4CF14CEAB7D76682EC9 /* Build configuration list for PBXNativeTarget "Pods-OneDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF829C3EE62ACB6992C0A95A /* Debug */,
+				EEF1257930B2E7BD93F15228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D38CAB9405F9F896F535E18 /* Project object */;
+}
